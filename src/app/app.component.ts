@@ -1,14 +1,16 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
-import { WeatherComponent } from './weather/weather.component';
+import { HomeComponent } from './pages/home/home.component';
+import { FooterComponent } from './footer/footer.component';
+import { HeaderComponent } from './header/header.component';
 
-const imports = [CommonModule, RouterOutlet, WeatherComponent];
+const imports = [CommonModule, RouterOutlet, HomeComponent,FooterComponent, HeaderComponent];
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrl: './app.component.sass',
+  styleUrl: './app.component.scss',
   standalone: true,
   imports: imports,
 })

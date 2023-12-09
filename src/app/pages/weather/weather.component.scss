@@ -1,0 +1,42 @@
+/* Styles CSS */
+/* Dans votre fichier SCSS */
+
+.weather-forecast {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 20px;
+  padding: 10px;
+  font-family: Arial, sans-serif;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .forecast-header {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    font-weight: bold;
+    background-color: #f0f0f0;
+    padding: 8px;
+
+    div {
+      padding: 5px;
+    }
+  }
+
+  .forecast-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 8px;
+
+    div {
+      padding: 5px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}
